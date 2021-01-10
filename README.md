@@ -21,6 +21,17 @@ holiday_hash = {
   }
 }
 
+new_list=[]
+holiday_hash.map do |season, holiday|
+   holiday.map do |holiday, item|
+      if item.include?("BBQ")
+        holiday
+      end
+   end.flatten.compact
+end
+
+
+.dflatten.compact
 
 
 
